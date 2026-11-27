@@ -1,0 +1,25 @@
+{
+  "models": {
+    "gemini-small": {
+      "provider": "google",
+      "model": "gemini-3.5-flash-lite"
+    },
+    "gpt-oss-120b": {
+      "provider": "openai_compatible",
+      "model": "openai/gpt-oss-120b",
+      "base_url": "https://api.groq.com/openai/v1",
+      "api_key_env": "GROQ_API_KEY",
+      "skip_direct": true
+    }
+  },
+  "prices": {
+    "gemini-small": {
+      "in": null,
+      "out": null
+    },
+    "gpt-oss-120b": {
+      "in": null,
+      "out": null
+    }
+  }
+}

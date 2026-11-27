@@ -1,0 +1,27 @@
+{
+  "mode": "real",
+  "finished": "2026-11-23T12:42:46",
+  "table_source": "real",
+  "table_sha": "66124ebc4a684e2a",
+  "models": {
+    "gemini-small": {
+      "provider": "google",
+      "model": "gemini-3.5-flash-lite"
+    },
+    "gpt-oss-120b": {
+      "provider": "openai_compatible",
+      "model": "openai/gpt-oss-120b",
+      "base_url": "https://api.groq.com/openai/v1",
+      "api_key_env": "GROQ_API_KEY",
+      "skip_direct": true
+    }
+  },
+  "runs": [
+    1,
+    2,
+    3
+  ],
+  "n_questions": 83,
+  "n_trap_questions": 30,
+  "python": "3.13.5"
+}

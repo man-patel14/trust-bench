@@ -1,0 +1,666 @@
+[
+  {
+    "id": "Q001",
+    "category": "lookup",
+    "difficulty": "easy",
+    "question": "How many rows are in the table?",
+    "kind": "number",
+    "expected": 268.0
+  },
+  {
+    "id": "Q002",
+    "category": "lookup",
+    "difficulty": "easy",
+    "question": "How many distinct order_id values are there?",
+    "kind": "number",
+    "expected": 26.0
+  },
+  {
+    "id": "Q003",
+    "category": "lookup",
+    "difficulty": "easy",
+    "question": "How many distinct countries appear in the table?",
+    "kind": "number",
+    "expected": 2.0
+  },
+  {
+    "id": "Q004",
+    "category": "lookup",
+    "difficulty": "easy",
+    "question": "How many distinct customer_id values are there? Ignore missing values.",
+    "kind": "number",
+    "expected": 24.0
+  },
+  {
+    "id": "Q005",
+    "category": "missing_data",
+    "difficulty": "easy",
+    "question": "How many rows have a missing customer_id?",
+    "kind": "number",
+    "expected": 4.0
+  },
+  {
+    "id": "Q006",
+    "category": "missing_data",
+    "difficulty": "easy",
+    "question": "How many rows have a missing product_name?",
+    "kind": "number",
+    "expected": 7.0
+  },
+  {
+    "id": "Q007",
+    "category": "missing_data",
+    "difficulty": "medium",
+    "question": "What percentage of rows have a missing customer_id? Round to 1 decimal place.",
+    "kind": "number",
+    "expected": 1.5
+  },
+  {
+    "id": "Q008",
+    "category": "messy_data",
+    "difficulty": "medium",
+    "question": "How many rows are exact duplicates of an earlier row? Count only the extra copies.",
+    "kind": "number",
+    "expected": 7.0
+  },
+  {
+    "id": "Q009",
+    "category": "messy_data",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values start with the letter C?",
+    "kind": "number",
+    "expected": 5.0
+  },
+  {
+    "id": "Q010",
+    "category": "messy_data",
+    "difficulty": "medium",
+    "question": "What is the total qty of all rows where qty is negative?",
+    "kind": "number",
+    "expected": -20.0
+  },
+  {
+    "id": "Q011",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue over all rows?",
+    "kind": "number",
+    "expected": 4561.9
+  },
+  {
+    "id": "Q012",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue, excluding rows whose order_id starts with C?",
+    "kind": "number",
+    "expected": 4615.45
+  },
+  {
+    "id": "Q013",
+    "category": "aggregation",
+    "difficulty": "easy",
+    "question": "What is the average unit_price across all rows?",
+    "kind": "number",
+    "expected": 3.84
+  },
+  {
+    "id": "Q014",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the median qty of rows where qty is greater than 0?",
+    "kind": "number",
+    "expected": 6.0
+  },
+  {
+    "id": "Q015",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "Which country has the most rows? Answer with the country name.",
+    "kind": "text",
+    "expected": "United Kingdom"
+  },
+  {
+    "id": "Q016",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "Excluding cancelled orders (order_id starting with C) and rows with a missing customer_id, which customer_id has the highest total revenue? Answer with the customer_id number.",
+    "kind": "number",
+    "expected": 15084.0
+  },
+  {
+    "id": "Q017",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "Using only orders whose order_id does not start with C, what is the average revenue per distinct order_id?",
+    "kind": "number",
+    "expected": 219.78
+  },
+  {
+    "id": "Q018",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "Excluding cancelled orders, which product_code has the highest total qty? Answer with the product_code.",
+    "kind": "text",
+    "expected": "22952"
+  },
+  {
+    "id": "Q019",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "Excluding cancelled orders, in which month (format YYYY-MM) is total revenue the highest?",
+    "kind": "text",
+    "expected": "2013-08"
+  },
+  {
+    "id": "Q020",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "How many distinct order_id values contain 5 or more rows?",
+    "kind": "number",
+    "expected": 16.0
+  },
+  {
+    "id": "Q021",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",
+    "kind": "number",
+    "expected": 7.06
+  },
+  {
+    "id": "Q022",
+    "category": "multi_step",
+    "difficulty": "hard",
+    "question": "Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",
+    "kind": "number",
+    "expected": 3638.25
+  },
+  {
+    "id": "Q023",
+    "category": "lookup",
+    "difficulty": "easy",
+    "question": "How many rows have country equal to 'United Kingdom'?",
+    "kind": "number",
+    "expected": 248.0
+  },
+  {
+    "id": "Q024",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with country equal to 'United Kingdom'?",
+    "kind": "number",
+    "expected": 4073.3
+  },
+  {
+    "id": "Q025",
+    "category": "lookup",
+    "difficulty": "easy",
+    "question": "How many rows have country equal to 'EIRE'?",
+    "kind": "number",
+    "expected": 20.0
+  },
+  {
+    "id": "Q026",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with country equal to 'EIRE'?",
+    "kind": "number",
+    "expected": 488.6
+  },
+  {
+    "id": "Q027",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '21519'?",
+    "kind": "number",
+    "expected": 24.0
+  },
+  {
+    "id": "Q028",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '22926'?",
+    "kind": "number",
+    "expected": 2.0
+  },
+  {
+    "id": "Q029",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '21928'?",
+    "kind": "number",
+    "expected": 10.0
+  },
+  {
+    "id": "Q030",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '23497'?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q031",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code 'POST'?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q032",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '21126'?",
+    "kind": "number",
+    "expected": 12.0
+  },
+  {
+    "id": "Q033",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '20712'?",
+    "kind": "number",
+    "expected": 10.0
+  },
+  {
+    "id": "Q034",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total qty over all rows with product_code '22941'?",
+    "kind": "number",
+    "expected": 10.0
+  },
+  {
+    "id": "Q035",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 15834 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q036",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 13509 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q037",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 12746 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q038",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 14527 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q039",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 13534 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q040",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 17809 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q041",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 17677 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q042",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "How many distinct order_id values does customer_id 16359 have?",
+    "kind": "number",
+    "expected": 1.0
+  },
+  {
+    "id": "Q043",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2012-09 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 50.7
+  },
+  {
+    "id": "Q044",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2012-10 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 556.26
+  },
+  {
+    "id": "Q045",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 537.08
+  },
+  {
+    "id": "Q046",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2013-04 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 123.13
+  },
+  {
+    "id": "Q047",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2013-06 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 119.04
+  },
+  {
+    "id": "Q048",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2013-07 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 488.6
+  },
+  {
+    "id": "Q049",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 1273.44
+  },
+  {
+    "id": "Q050",
+    "category": "aggregation",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with order_datetime in the month 2013-10 (YYYY-MM)?",
+    "kind": "number",
+    "expected": 501.48
+  },
+  {
+    "id": "Q051",
+    "category": "false_premise",
+    "difficulty": "medium",
+    "question": "How many rows have country equal to 'Narnia'?",
+    "kind": "number",
+    "expected": 0.0
+  },
+  {
+    "id": "Q052",
+    "category": "false_premise",
+    "difficulty": "medium",
+    "question": "What is the total revenue of all rows with product_code 'ZZZ999'?",
+    "kind": "number",
+    "expected": 0.0
+  },
+  {
+    "id": "Q053",
+    "category": "false_premise",
+    "difficulty": "medium",
+    "question": "How many rows have a unit_price greater than 10000?",
+    "kind": "number",
+    "expected": 0.0
+  },
+  {
+    "id": "Q054",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the average age of the customers?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q055",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the profit margin of the product with the highest revenue?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q056",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "How many of the customers are female?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q057",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "Which sales channel (website, app or store) produced the most revenue?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q058",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the average customer satisfaction score for orders from France?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q059",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the total shipping cost of all orders?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q060",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What was the average revenue per order in the year 2017?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q061",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "Which delivery company delivered the most orders?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q062",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Who is our best customer?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q063",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which product is the best seller?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q064",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which country is the most important market?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q065",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "What is the typical order size?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q066",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "What was the overall customer churn rate?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q067",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What percentage of orders were paid using PayPal?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q068",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the average discount percentage given on orders?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q069",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "Which warehouse shipped the most orders?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q070",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the email address of customer_id 12746?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q071",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the current stock level of product_code '20725'?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q072",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "Which sales representative handled the largest order?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q073",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What was the total marketing spend over the whole period?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q074",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "Which product category generated the most revenue?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q075",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What is the average delivery time in days from order to arrival?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q076",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which month was the best for the business?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q077",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which country is growing the fastest?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q078",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Who are our loyal customers?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q079",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "How many high-value customers do we have?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q080",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which orders are unusually large?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q081",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "How healthy is the business?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q082",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which customers are most at risk of leaving?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  },
+  {
+    "id": "Q083",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "question": "Which products are doing well?",
+    "kind": "abstain",
+    "expected": "CANNOT_ANSWER"
+  }
+]

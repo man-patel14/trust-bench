@@ -1,0 +1,84 @@
+id,category,difficulty,question,kind,expected
+Q001,lookup,easy,How many rows are in the table?,number,268.0
+Q002,lookup,easy,How many distinct order_id values are there?,number,26.0
+Q003,lookup,easy,How many distinct countries appear in the table?,number,2.0
+Q004,lookup,easy,How many distinct customer_id values are there? Ignore missing values.,number,24.0
+Q005,missing_data,easy,How many rows have a missing customer_id?,number,4.0
+Q006,missing_data,easy,How many rows have a missing product_name?,number,7.0
+Q007,missing_data,medium,What percentage of rows have a missing customer_id? Round to 1 decimal place.,number,1.5
+Q008,messy_data,medium,How many rows are exact duplicates of an earlier row? Count only the extra copies.,number,7.0
+Q009,messy_data,medium,How many distinct order_id values start with the letter C?,number,5.0
+Q010,messy_data,medium,What is the total qty of all rows where qty is negative?,number,-20.0
+Q011,aggregation,medium,What is the total revenue over all rows?,number,4561.9
+Q012,aggregation,medium,"What is the total revenue, excluding rows whose order_id starts with C?",number,4615.45
+Q013,aggregation,easy,What is the average unit_price across all rows?,number,3.84
+Q014,aggregation,medium,What is the median qty of rows where qty is greater than 0?,number,6.0
+Q015,aggregation,medium,Which country has the most rows? Answer with the country name.,text,United Kingdom
+Q016,multi_step,hard,"Excluding cancelled orders (order_id starting with C) and rows with a missing customer_id, which customer_id has the highest total revenue? Answer with the customer_id number.",number,15084.0
+Q017,multi_step,hard,"Using only orders whose order_id does not start with C, what is the average revenue per distinct order_id?",number,219.78
+Q018,multi_step,hard,"Excluding cancelled orders, which product_code has the highest total qty? Answer with the product_code.",text,22952
+Q019,multi_step,hard,"Excluding cancelled orders, in which month (format YYYY-MM) is total revenue the highest?",text,2013-08
+Q020,multi_step,hard,How many distinct order_id values contain 5 or more rows?,number,16.0
+Q021,multi_step,hard,"Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",number,7.06
+Q022,multi_step,hard,"Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",number,3638.25
+Q023,lookup,easy,How many rows have country equal to 'United Kingdom'?,number,248.0
+Q024,aggregation,medium,What is the total revenue of all rows with country equal to 'United Kingdom'?,number,4073.3
+Q025,lookup,easy,How many rows have country equal to 'EIRE'?,number,20.0
+Q026,aggregation,medium,What is the total revenue of all rows with country equal to 'EIRE'?,number,488.6
+Q027,aggregation,medium,What is the total qty over all rows with product_code '21519'?,number,24.0
+Q028,aggregation,medium,What is the total qty over all rows with product_code '22926'?,number,2.0
+Q029,aggregation,medium,What is the total qty over all rows with product_code '21928'?,number,10.0
+Q030,aggregation,medium,What is the total qty over all rows with product_code '23497'?,number,1.0
+Q031,aggregation,medium,What is the total qty over all rows with product_code 'POST'?,number,1.0
+Q032,aggregation,medium,What is the total qty over all rows with product_code '21126'?,number,12.0
+Q033,aggregation,medium,What is the total qty over all rows with product_code '20712'?,number,10.0
+Q034,aggregation,medium,What is the total qty over all rows with product_code '22941'?,number,10.0
+Q035,aggregation,medium,How many distinct order_id values does customer_id 15834 have?,number,1.0
+Q036,aggregation,medium,How many distinct order_id values does customer_id 13509 have?,number,1.0
+Q037,aggregation,medium,How many distinct order_id values does customer_id 12746 have?,number,1.0
+Q038,aggregation,medium,How many distinct order_id values does customer_id 14527 have?,number,1.0
+Q039,aggregation,medium,How many distinct order_id values does customer_id 13534 have?,number,1.0
+Q040,aggregation,medium,How many distinct order_id values does customer_id 17809 have?,number,1.0
+Q041,aggregation,medium,How many distinct order_id values does customer_id 17677 have?,number,1.0
+Q042,aggregation,medium,How many distinct order_id values does customer_id 16359 have?,number,1.0
+Q043,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2012-09 (YYYY-MM)?,number,50.7
+Q044,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2012-10 (YYYY-MM)?,number,556.26
+Q045,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?,number,537.08
+Q046,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2013-04 (YYYY-MM)?,number,123.13
+Q047,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2013-06 (YYYY-MM)?,number,119.04
+Q048,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2013-07 (YYYY-MM)?,number,488.6
+Q049,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?,number,1273.44
+Q050,aggregation,medium,What is the total revenue of all rows with order_datetime in the month 2013-10 (YYYY-MM)?,number,501.48
+Q051,false_premise,medium,How many rows have country equal to 'Narnia'?,number,0.0
+Q052,false_premise,medium,What is the total revenue of all rows with product_code 'ZZZ999'?,number,0.0
+Q053,false_premise,medium,How many rows have a unit_price greater than 10000?,number,0.0
+Q054,unanswerable,hard,What is the average age of the customers?,abstain,CANNOT_ANSWER
+Q055,unanswerable,hard,What is the profit margin of the product with the highest revenue?,abstain,CANNOT_ANSWER
+Q056,unanswerable,hard,How many of the customers are female?,abstain,CANNOT_ANSWER
+Q057,unanswerable,hard,"Which sales channel (website, app or store) produced the most revenue?",abstain,CANNOT_ANSWER
+Q058,unanswerable,hard,What is the average customer satisfaction score for orders from France?,abstain,CANNOT_ANSWER
+Q059,unanswerable,hard,What is the total shipping cost of all orders?,abstain,CANNOT_ANSWER
+Q060,unanswerable,hard,What was the average revenue per order in the year 2017?,abstain,CANNOT_ANSWER
+Q061,unanswerable,hard,Which delivery company delivered the most orders?,abstain,CANNOT_ANSWER
+Q062,ambiguous,hard,Who is our best customer?,abstain,CANNOT_ANSWER
+Q063,ambiguous,hard,Which product is the best seller?,abstain,CANNOT_ANSWER
+Q064,ambiguous,hard,Which country is the most important market?,abstain,CANNOT_ANSWER
+Q065,ambiguous,hard,What is the typical order size?,abstain,CANNOT_ANSWER
+Q066,ambiguous,hard,What was the overall customer churn rate?,abstain,CANNOT_ANSWER
+Q067,unanswerable,hard,What percentage of orders were paid using PayPal?,abstain,CANNOT_ANSWER
+Q068,unanswerable,hard,What is the average discount percentage given on orders?,abstain,CANNOT_ANSWER
+Q069,unanswerable,hard,Which warehouse shipped the most orders?,abstain,CANNOT_ANSWER
+Q070,unanswerable,hard,What is the email address of customer_id 12746?,abstain,CANNOT_ANSWER
+Q071,unanswerable,hard,What is the current stock level of product_code '20725'?,abstain,CANNOT_ANSWER
+Q072,unanswerable,hard,Which sales representative handled the largest order?,abstain,CANNOT_ANSWER
+Q073,unanswerable,hard,What was the total marketing spend over the whole period?,abstain,CANNOT_ANSWER
+Q074,unanswerable,hard,Which product category generated the most revenue?,abstain,CANNOT_ANSWER
+Q075,unanswerable,hard,What is the average delivery time in days from order to arrival?,abstain,CANNOT_ANSWER
+Q076,ambiguous,hard,Which month was the best for the business?,abstain,CANNOT_ANSWER
+Q077,ambiguous,hard,Which country is growing the fastest?,abstain,CANNOT_ANSWER
+Q078,ambiguous,hard,Who are our loyal customers?,abstain,CANNOT_ANSWER
+Q079,ambiguous,hard,How many high-value customers do we have?,abstain,CANNOT_ANSWER
+Q080,ambiguous,hard,Which orders are unusually large?,abstain,CANNOT_ANSWER
+Q081,ambiguous,hard,How healthy is the business?,abstain,CANNOT_ANSWER
+Q082,ambiguous,hard,Which customers are most at risk of leaving?,abstain,CANNOT_ANSWER
+Q083,ambiguous,hard,Which products are doing well?,abstain,CANNOT_ANSWER

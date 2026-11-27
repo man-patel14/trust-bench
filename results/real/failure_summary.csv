@@ -1,0 +1,7 @@
+model,approach,arithmetic_or_counting_error,code_error,format_error,hallucinated_answer,over_cautious,All
+gemini-small,check,0,0,1,3,1,5
+gemini-small,code,0,2,0,3,0,5
+gemini-small,direct,86,0,0,0,3,89
+gpt-oss-120b,check,0,0,2,6,10,18
+gpt-oss-120b,code,0,0,0,25,0,25
+All,,86,2,3,37,14,142

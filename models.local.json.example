@@ -1,0 +1,12 @@
+{
+  "models": {
+    "gemini-small": {"provider": "google", "model": "PUT_EXACT_MODEL_NAME_HERE"},
+    "gpt-small": {"provider": "openai", "model": "PUT_EXACT_MODEL_NAME_HERE"}
+  },
+  "prices": {
+    "claude-haiku": {"in": null, "out": null},
+    "claude-sonnet": {"in": null, "out": null},
+    "gemini-small": {"in": null, "out": null},
+    "gpt-small": {"in": null, "out": null}
+  }
+}

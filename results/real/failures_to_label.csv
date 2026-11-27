@@ -1,0 +1,1459 @@
+approach,cannot_answer,answer,parse_error,code,error,raw,tokens_in,tokens_out,latency,simulated,model_name,model,run,qid,category,difficulty,kind,expected,question,outcome,is_correct,suggested_type,failure_type
+direct,False,128,False,,,"```json
+{""cannot_answer"": false, ""answer"": 128}
+```",15991,20,1.5825448036193848,False,gemini-3.5-flash-lite,gemini-small,1,Q001,lookup,easy,number,268.0,How many rows are in the table?,wrong,False,arithmetic_or_counting_error,
+direct,False,6,False,,,"```json
+{""cannot_answer"": false, ""answer"": 6}
+```",16000,18,1.8797104358673096,False,gemini-3.5-flash-lite,gemini-small,1,Q008,messy_data,medium,number,7.0,How many rows are exact duplicates of an earlier row? Count only the extra copies.,wrong,False,arithmetic_or_counting_error,
+direct,False,139,False,,,"```json
+{""cannot_answer"": false, ""answer"": 139}
+```",15994,20,1.7812867164611816,False,gemini-3.5-flash-lite,gemini-small,1,Q023,lookup,easy,number,248.0,How many rows have country equal to 'United Kingdom'?,wrong,False,arithmetic_or_counting_error,
+direct,False,1058.45,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1058.45}
+```",16011,24,1.3528363704681396,False,gemini-3.5-flash-lite,gemini-small,1,Q045,aggregation,medium,number,537.08,What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,True,None,False,,,"```json
+{""cannot_answer"": true, ""answer"": null}
+```",16002,17,1.752887487411499,False,gemini-3.5-flash-lite,gemini-small,1,Q052,false_premise,medium,number,0.0,What is the total revenue of all rows with product_code 'ZZZ999'?,over_abstain,False,over_cautious,
+direct,False,25,False,,,"```json
+{""cannot_answer"": false, ""answer"": 25}
+```",15993,19,1.7538933753967285,False,gemini-3.5-flash-lite,gemini-small,1,Q002,lookup,easy,number,26.0,How many distinct order_id values are there?,wrong,False,arithmetic_or_counting_error,
+direct,False,18,False,,,"```json
+{""cannot_answer"": false, ""answer"": 18}
+```",15997,19,1.2842273712158203,False,gemini-3.5-flash-lite,gemini-small,1,Q004,lookup,easy,number,24.0,How many distinct customer_id values are there? Ignore missing values.,wrong,False,arithmetic_or_counting_error,
+direct,False,3,False,,,"```json
+{""cannot_answer"": false, ""answer"": 3}
+```",15993,18,1.387575387954712,False,gemini-3.5-flash-lite,gemini-small,1,Q005,missing_data,easy,number,4.0,How many rows have a missing customer_id?,wrong,False,arithmetic_or_counting_error,
+direct,False,10,False,,,"```json
+{""cannot_answer"": false, ""answer"": 10}
+```",15993,19,1.6999709606170654,False,gemini-3.5-flash-lite,gemini-small,1,Q006,missing_data,easy,number,7.0,How many rows have a missing product_name?,wrong,False,arithmetic_or_counting_error,
+direct,False,10565.48,False,,,"```json
+{""cannot_answer"": false, ""answer"": 10565.48}
+```",15992,25,1.3082449436187744,False,gemini-3.5-flash-lite,gemini-small,1,Q011,aggregation,medium,number,4561.9,What is the total revenue over all rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,12140.06,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12140.06}
+```",15999,25,1.5646626949310303,False,gemini-3.5-flash-lite,gemini-small,1,Q012,aggregation,medium,number,4615.45,"What is the total revenue, excluding rows whose order_id starts with C?",wrong,False,arithmetic_or_counting_error,
+direct,False,3.7538,False,,,"```json
+{""cannot_answer"": false, ""answer"": 3.7537634408602153}
+```",15994,35,1.7431669235229492,False,gemini-3.5-flash-lite,gemini-small,1,Q013,aggregation,easy,number,3.84,What is the average unit_price across all rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,12.0,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12.0}
+```",15998,21,2.3488214015960693,False,gemini-3.5-flash-lite,gemini-small,1,Q014,aggregation,medium,number,6.0,What is the median qty of rows where qty is greater than 0?,wrong,False,arithmetic_or_counting_error,
+direct,False,10,False,,,"```json
+{""cannot_answer"": false, ""answer"": 10}
+```",15997,19,1.1192798614501953,False,gemini-3.5-flash-lite,gemini-small,1,Q020,multi_step,hard,number,16.0,How many distinct order_id values contain 5 or more rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,5.86,False,,,"```json
+{""cannot_answer"": false, ""answer"": 5.86}
+```",16001,21,1.6556129455566406,False,gemini-3.5-flash-lite,gemini-small,1,Q021,multi_step,hard,number,7.06,"Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",wrong,False,arithmetic_or_counting_error,
+direct,False,12836.85,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12836.85}
+```",16003,25,1.568701982498169,False,gemini-3.5-flash-lite,gemini-small,1,Q022,multi_step,hard,number,3638.25,"Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",wrong,False,arithmetic_or_counting_error,
+direct,False,12891.88,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12891.88}
+```",15999,25,1.857109546661377,False,gemini-3.5-flash-lite,gemini-small,1,Q024,aggregation,medium,number,4073.3,What is the total revenue of all rows with country equal to 'United Kingdom'?,wrong,False,arithmetic_or_counting_error,
+direct,False,361.35,False,,,"```json
+{""cannot_answer"": false, ""answer"": 361.35}
+```",15999,23,1.4077057838439941,False,gemini-3.5-flash-lite,gemini-small,1,Q026,aggregation,medium,number,488.6,What is the total revenue of all rows with country equal to 'EIRE'?,wrong,False,arithmetic_or_counting_error,
+direct,False,1.9%,False,,,"```json
+{""cannot_answer"": false, ""answer"": ""1.9%""}
+```",16001,21,1.6937031745910645,False,gemini-3.5-flash-lite,gemini-small,1,Q007,missing_data,medium,number,1.5,What percentage of rows have a missing customer_id? Round to 1 decimal place.,wrong,False,arithmetic_or_counting_error,
+direct,False,6,False,,,"```json
+{""cannot_answer"": false, ""answer"": 6}
+```",15996,18,1.838782787322998,False,gemini-3.5-flash-lite,gemini-small,1,Q009,messy_data,medium,number,5.0,How many distinct order_id values start with the letter C?,wrong,False,arithmetic_or_counting_error,
+direct,False,-18,False,,,"```json
+{""cannot_answer"": false, ""answer"": -18}
+```",15996,19,1.5571537017822266,False,gemini-3.5-flash-lite,gemini-small,1,Q010,messy_data,medium,number,-20.0,What is the total qty of all rows where qty is negative?,wrong,False,arithmetic_or_counting_error,
+direct,False,105.7441,False,,,"```json
+{""cannot_answer"": false, ""answer"": 105.74411764705883}
+```",16007,35,6.416251182556152,False,gemini-3.5-flash-lite,gemini-small,1,Q017,multi_step,hard,number,219.78,"Using only orders whose order_id does not start with C, what is the average revenue per distinct order_id?",wrong,False,arithmetic_or_counting_error,
+direct,False,21,False,,,"```json
+{""cannot_answer"": false, ""answer"": 21}
+```",15994,19,1.2486448287963867,False,gemini-3.5-flash-lite,gemini-small,1,Q025,lookup,easy,number,20.0,How many rows have country equal to 'EIRE'?,wrong,False,arithmetic_or_counting_error,
+direct,False,1285.49,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1285.49}
+```",16011,24,8.736453533172607,False,gemini-3.5-flash-lite,gemini-small,1,Q044,aggregation,medium,number,556.26,What is the total revenue of all rows with order_datetime in the month 2012-10 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,-7.95,False,,,"```json
+{""cannot_answer"": false, ""answer"": -7.95}
+```",16011,21,1.3687446117401123,False,gemini-3.5-flash-lite,gemini-small,1,Q046,aggregation,medium,number,123.13,What is the total revenue of all rows with order_datetime in the month 2013-04 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,128.88,False,,,"```json
+{""cannot_answer"": false, ""answer"": 128.88}
+```",16011,23,1.740729570388794,False,gemini-3.5-flash-lite,gemini-small,1,Q047,aggregation,medium,number,119.04,What is the total revenue of all rows with order_datetime in the month 2013-06 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1211.5,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1211.5}
+```",16011,23,1.265594244003296,False,gemini-3.5-flash-lite,gemini-small,1,Q048,aggregation,medium,number,488.6,What is the total revenue of all rows with order_datetime in the month 2013-07 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1952.12,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1952.12}
+```",16011,24,1.4485931396484375,False,gemini-3.5-flash-lite,gemini-small,1,Q049,aggregation,medium,number,1273.44,What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1289.87,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1289.87}
+```",16011,24,1.7616770267486572,False,gemini-3.5-flash-lite,gemini-small,1,Q050,aggregation,medium,number,501.48,What is the total revenue of all rows with order_datetime in the month 2013-10 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,84992,False,,,"```json
+{""cannot_answer"": false, ""answer"": ""84992""}
+```",16004,22,2.252995729446411,False,gemini-3.5-flash-lite,gemini-small,1,Q018,multi_step,hard,text,22952,"Excluding cancelled orders, which product_code has the highest total qty? Answer with the product_code.",wrong,False,arithmetic_or_counting_error,
+direct,False,125,False,,,"```json
+{""cannot_answer"": false, ""answer"": 125}
+```",15991,20,7.106877088546753,False,gemini-3.5-flash-lite,gemini-small,2,Q001,lookup,easy,number,268.0,How many rows are in the table?,wrong,False,arithmetic_or_counting_error,
+direct,False,25,False,,,"```json
+{""cannot_answer"": false, ""answer"": 25}
+```",15993,19,3.2825381755828857,False,gemini-3.5-flash-lite,gemini-small,2,Q002,lookup,easy,number,26.0,How many distinct order_id values are there?,wrong,False,arithmetic_or_counting_error,
+direct,False,18,False,,,"```json
+{""cannot_answer"": false, ""answer"": 18}
+```",15997,19,7.0685460567474365,False,gemini-3.5-flash-lite,gemini-small,2,Q004,lookup,easy,number,24.0,How many distinct customer_id values are there? Ignore missing values.,wrong,False,arithmetic_or_counting_error,
+direct,False,3,False,,,"```json
+{""cannot_answer"": false, ""answer"": 3}
+```",15993,18,2.453005790710449,False,gemini-3.5-flash-lite,gemini-small,2,Q005,missing_data,easy,number,4.0,How many rows have a missing customer_id?,wrong,False,arithmetic_or_counting_error,
+direct,False,10,False,,,"```json
+{""cannot_answer"": false, ""answer"": 10}
+```",15993,19,6.074353456497192,False,gemini-3.5-flash-lite,gemini-small,2,Q006,missing_data,easy,number,7.0,How many rows have a missing product_name?,wrong,False,arithmetic_or_counting_error,
+direct,False,1.9%,False,,,"```json
+{""cannot_answer"": false, ""answer"": ""1.9%""}
+```",16001,21,6.189654350280762,False,gemini-3.5-flash-lite,gemini-small,2,Q007,missing_data,medium,number,1.5,What percentage of rows have a missing customer_id? Round to 1 decimal place.,wrong,False,arithmetic_or_counting_error,
+direct,False,6,False,,,"```json
+{""cannot_answer"": false, ""answer"": 6}
+```",16000,18,1.541105031967163,False,gemini-3.5-flash-lite,gemini-small,2,Q008,messy_data,medium,number,7.0,How many rows are exact duplicates of an earlier row? Count only the extra copies.,wrong,False,arithmetic_or_counting_error,
+direct,False,7,False,,,"```json
+{""cannot_answer"": false, ""answer"": 7}
+```",15996,18,5.807949542999268,False,gemini-3.5-flash-lite,gemini-small,2,Q009,messy_data,medium,number,5.0,How many distinct order_id values start with the letter C?,wrong,False,arithmetic_or_counting_error,
+direct,False,-18,False,,,"```json
+{""cannot_answer"": false, ""answer"": -18}
+```",15996,19,9.258574962615967,False,gemini-3.5-flash-lite,gemini-small,2,Q010,messy_data,medium,number,-20.0,What is the total qty of all rows where qty is negative?,wrong,False,arithmetic_or_counting_error,
+direct,False,12053.07,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12053.07}
+```",15992,25,1.5952157974243164,False,gemini-3.5-flash-lite,gemini-small,2,Q011,aggregation,medium,number,4561.9,What is the total revenue over all rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,12891.81,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12891.81}
+```",15999,25,1.783921241760254,False,gemini-3.5-flash-lite,gemini-small,2,Q012,aggregation,medium,number,4615.45,"What is the total revenue, excluding rows whose order_id starts with C?",wrong,False,arithmetic_or_counting_error,
+direct,False,3.7553,False,,,"```json
+{""cannot_answer"": false, ""answer"": 3.755294117647059}
+```",15994,34,1.246450662612915,False,gemini-3.5-flash-lite,gemini-small,2,Q013,aggregation,easy,number,3.84,What is the average unit_price across all rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,12,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12}
+```",15998,19,3.6213409900665283,False,gemini-3.5-flash-lite,gemini-small,2,Q014,aggregation,medium,number,6.0,What is the median qty of rows where qty is greater than 0?,wrong,False,arithmetic_or_counting_error,
+direct,False,121.2829,False,,,"```json
+{""cannot_answer"": false, ""answer"": 121.28290322580646}
+```",16007,35,1.854027271270752,False,gemini-3.5-flash-lite,gemini-small,2,Q017,multi_step,hard,number,219.78,"Using only orders whose order_id does not start with C, what is the average revenue per distinct order_id?",wrong,False,arithmetic_or_counting_error,
+direct,False,84992,False,,,"```json
+{""cannot_answer"": false, ""answer"": ""84992""}
+```",16004,22,1.581705093383789,False,gemini-3.5-flash-lite,gemini-small,2,Q018,multi_step,hard,text,22952,"Excluding cancelled orders, which product_code has the highest total qty? Answer with the product_code.",wrong,False,arithmetic_or_counting_error,
+direct,False,10,False,,,"```json
+{""cannot_answer"": false, ""answer"": 10}
+```",15997,19,5.739583492279053,False,gemini-3.5-flash-lite,gemini-small,2,Q020,multi_step,hard,number,16.0,How many distinct order_id values contain 5 or more rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,5.86,False,,,"```json
+{""cannot_answer"": false, ""answer"": 5.86}
+```",16001,21,1.7225100994110107,False,gemini-3.5-flash-lite,gemini-small,2,Q021,multi_step,hard,number,7.06,"Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",wrong,False,arithmetic_or_counting_error,
+direct,False,12891.82,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12891.82}
+```",16003,25,1.2070348262786865,False,gemini-3.5-flash-lite,gemini-small,2,Q022,multi_step,hard,number,3638.25,"Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",wrong,False,arithmetic_or_counting_error,
+direct,False,140,False,,,"```json
+{""cannot_answer"": false, ""answer"": 140}
+```",15994,20,7.338275909423828,False,gemini-3.5-flash-lite,gemini-small,2,Q023,lookup,easy,number,248.0,How many rows have country equal to 'United Kingdom'?,wrong,False,arithmetic_or_counting_error,
+direct,False,12595.61,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12595.61}
+```",15999,25,2.4067442417144775,False,gemini-3.5-flash-lite,gemini-small,2,Q024,aggregation,medium,number,4073.3,What is the total revenue of all rows with country equal to 'United Kingdom'?,wrong,False,arithmetic_or_counting_error,
+direct,False,21,False,,,"```json
+{""cannot_answer"": false, ""answer"": 21}
+```",15994,19,6.849619150161743,False,gemini-3.5-flash-lite,gemini-small,2,Q025,lookup,easy,number,20.0,How many rows have country equal to 'EIRE'?,wrong,False,arithmetic_or_counting_error,
+direct,False,401.8,False,,,"```json
+{""cannot_answer"": false, ""answer"": 401.8}
+```",15999,22,6.354599475860596,False,gemini-3.5-flash-lite,gemini-small,2,Q026,aggregation,medium,number,488.6,What is the total revenue of all rows with country equal to 'EIRE'?,wrong,False,arithmetic_or_counting_error,
+direct,False,1289.87,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1289.87}
+```",16011,24,5.8035829067230225,False,gemini-3.5-flash-lite,gemini-small,2,Q044,aggregation,medium,number,556.26,What is the total revenue of all rows with order_datetime in the month 2012-10 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1289.8,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1289.8}
+```",16011,23,1.6439177989959717,False,gemini-3.5-flash-lite,gemini-small,2,Q045,aggregation,medium,number,537.08,What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+code,,None,True,"answer = (
+    df.loc[
+        (df['order_datetime'].dt.year == 2013) & 
+        (df['order_datetime'].dt.month == 3), 
+        (df['qty'] * df['unit_price'])
+    ].sum()
+)","KeyError: ""None of [Index([12.600000000000001, 38.099999999999994,               1.25,\n                     2.55,                6.6,               1.49,\n                     4.95,                5.9,                2.5,\n        8.850000000000001,\n       ...\n                     17.0,          ","```python
+answer = (
+    df.loc[
+        (df['order_datetime'].dt.year == 2013) & 
+        (df['order_datetime'].dt.month == 3), 
+        (df['qty'] * df['unit_price'])
+    ].sum()
+)
+```",734,73,6.8804731369018555,False,gemini-3.5-flash-lite,gemini-small,2,Q045,aggregation,medium,number,537.08,What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?,error,False,code_error,
+check,False,cannot_answer=true,False,"answer = (
+    df.loc[
+        (df['order_datetime'].dt.year == 2013) & 
+        (df['order_datetime'].dt.month == 3), 
+        (df['qty'] * df['unit_price'])
+    ].sum()
+)","KeyError: ""None of [Index([12.600000000000001, 38.099999999999994,               1.25,\n                     2.55,                6.6,               1.49,\n                     4.95,                5.9,                2.5,\n        8.850000000000001,\n       ...\n                     17.0,          ","```json
+{
+  ""cannot_answer"": false,
+  ""answer"": ""cannot_answer=true""
+}
+```",1694,102,12.631895065307617,False,gemini-3.5-flash-lite,gemini-small,2,Q045,aggregation,medium,number,537.08,What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?,wrong,False,needs_manual_review,
+direct,False,-7.95,False,,,"```json
+{""cannot_answer"": false, ""answer"": -7.95}
+```",16011,21,5.888801336288452,False,gemini-3.5-flash-lite,gemini-small,2,Q046,aggregation,medium,number,123.13,What is the total revenue of all rows with order_datetime in the month 2013-04 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,128.88,False,,,"```json
+{""cannot_answer"": false, ""answer"": 128.88}
+```",16011,23,1.0269246101379395,False,gemini-3.5-flash-lite,gemini-small,2,Q047,aggregation,medium,number,119.04,What is the total revenue of all rows with order_datetime in the month 2013-06 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1211.55,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1211.55}
+```",16011,24,3.804263114929199,False,gemini-3.5-flash-lite,gemini-small,2,Q048,aggregation,medium,number,488.6,What is the total revenue of all rows with order_datetime in the month 2013-07 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1282.47,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1282.47}
+```",16011,24,2.0146892070770264,False,gemini-3.5-flash-lite,gemini-small,2,Q049,aggregation,medium,number,1273.44,What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+code,,None,True,"answer = (
+    df.loc[
+        (df[""order_datetime""].dt.year == 2013)
+        & (df[""order_datetime""].dt.month == 8),
+        ""qty"" * df[""unit_price""],  # type: ignore
+    ]
+    .mul(df[""unit_price""])
+    .sum()
+)","numpy._core._exceptions._UFuncNoLoopError: ufunc 'multiply' did not contain a loop with signature matching types (dtype('<U3'), dtype('float64')) -> None","```python
+answer = (
+    df.loc[
+        (df[""order_datetime""].dt.year == 2013)
+        & (df[""order_datetime""].dt.month == 8),
+        ""qty"" * df[""unit_price""],  # type: ignore
+    ]
+    .mul(df[""unit_price""])
+    .sum()
+)
+```",734,88,2.056072950363159,False,gemini-3.5-flash-lite,gemini-small,2,Q049,aggregation,medium,number,1273.44,What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?,error,False,code_error,
+check,True,None,False,"answer = (
+    df.loc[
+        (df[""order_datetime""].dt.year == 2013)
+        & (df[""order_datetime""].dt.month == 8),
+        ""qty"" * df[""unit_price""],  # type: ignore
+    ]
+    .mul(df[""unit_price""])
+    .sum()
+)","numpy._core._exceptions._UFuncNoLoopError: ufunc 'multiply' did not contain a loop with signature matching types (dtype('<U3'), dtype('float64')) -> None","```json
+{""cannot_answer"": true, ""answer"": null}
+```",1630,105,3.187039613723755,False,gemini-3.5-flash-lite,gemini-small,2,Q049,aggregation,medium,number,1273.44,What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?,over_abstain,False,over_cautious,
+direct,False,462.66,False,,,"```json
+{""cannot_answer"": false, ""answer"": 462.66}
+```",16011,23,2.976372480392456,False,gemini-3.5-flash-lite,gemini-small,2,Q050,aggregation,medium,number,501.48,What is the total revenue of all rows with order_datetime in the month 2013-10 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,True,None,False,,,"```json
+{""cannot_answer"": true, ""answer"": null}
+```",16002,17,4.85769510269165,False,gemini-3.5-flash-lite,gemini-small,2,Q052,false_premise,medium,number,0.0,What is the total revenue of all rows with product_code 'ZZZ999'?,over_abstain,False,over_cautious,
+direct,False,105,False,,,"```json
+{""cannot_answer"": false, ""answer"": 105}
+```",15991,20,5.192477226257324,False,gemini-3.5-flash-lite,gemini-small,3,Q001,lookup,easy,number,268.0,How many rows are in the table?,wrong,False,arithmetic_or_counting_error,
+direct,False,25,False,,,"```json
+{""cannot_answer"": false, ""answer"": 25}
+```",15993,19,1.5199971199035645,False,gemini-3.5-flash-lite,gemini-small,3,Q002,lookup,easy,number,26.0,How many distinct order_id values are there?,wrong,False,arithmetic_or_counting_error,
+direct,False,3,False,,,"```json
+{""cannot_answer"": false, ""answer"": 3}
+```",15993,18,1.462451457977295,False,gemini-3.5-flash-lite,gemini-small,3,Q005,missing_data,easy,number,4.0,How many rows have a missing customer_id?,wrong,False,arithmetic_or_counting_error,
+direct,False,12,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12}
+```",15993,19,6.133521795272827,False,gemini-3.5-flash-lite,gemini-small,3,Q006,missing_data,easy,number,7.0,How many rows have a missing product_name?,wrong,False,arithmetic_or_counting_error,
+direct,False,1.9%,False,,,"```json
+{""cannot_answer"": false, ""answer"": ""1.9%""}
+```",16001,21,2.357163667678833,False,gemini-3.5-flash-lite,gemini-small,3,Q007,missing_data,medium,number,1.5,What percentage of rows have a missing customer_id? Round to 1 decimal place.,wrong,False,arithmetic_or_counting_error,
+direct,False,6,False,,,"```json
+{""cannot_answer"": false, ""answer"": 6}
+```",16000,18,1.4010674953460693,False,gemini-3.5-flash-lite,gemini-small,3,Q008,messy_data,medium,number,7.0,How many rows are exact duplicates of an earlier row? Count only the extra copies.,wrong,False,arithmetic_or_counting_error,
+direct,False,6,False,,,"```json
+{""cannot_answer"": false, ""answer"": 6}
+```",15996,18,2.6124207973480225,False,gemini-3.5-flash-lite,gemini-small,3,Q009,messy_data,medium,number,5.0,How many distinct order_id values start with the letter C?,wrong,False,arithmetic_or_counting_error,
+direct,False,-18,False,,,"```json
+{""cannot_answer"": false, ""answer"": -18}
+```",15996,19,4.088823556900024,False,gemini-3.5-flash-lite,gemini-small,3,Q010,messy_data,medium,number,-20.0,What is the total qty of all rows where qty is negative?,wrong,False,arithmetic_or_counting_error,
+direct,False,12059.08,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12059.08}
+```",15992,25,5.022456407546997,False,gemini-3.5-flash-lite,gemini-small,3,Q011,aggregation,medium,number,4561.9,What is the total revenue over all rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,12053.48,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12053.48}
+```",15999,25,4.558290958404541,False,gemini-3.5-flash-lite,gemini-small,3,Q012,aggregation,medium,number,4615.45,"What is the total revenue, excluding rows whose order_id starts with C?",wrong,False,arithmetic_or_counting_error,
+direct,False,3.7537,False,,,"```json
+{""cannot_answer"": false, ""answer"": 3.753716814159292}
+```",15994,34,2.859053134918213,False,gemini-3.5-flash-lite,gemini-small,3,Q013,aggregation,easy,number,3.84,What is the average unit_price across all rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,121.2829,False,,,"```json
+{""cannot_answer"": false, ""answer"": 121.28290322580646}
+```",16007,35,1.5339720249176025,False,gemini-3.5-flash-lite,gemini-small,3,Q017,multi_step,hard,number,219.78,"Using only orders whose order_id does not start with C, what is the average revenue per distinct order_id?",wrong,False,arithmetic_or_counting_error,
+direct,False,84992,False,,,"```json
+{""cannot_answer"": false, ""answer"": ""84992""}
+```",16004,22,1.4109892845153809,False,gemini-3.5-flash-lite,gemini-small,3,Q018,multi_step,hard,text,22952,"Excluding cancelled orders, which product_code has the highest total qty? Answer with the product_code.",wrong,False,arithmetic_or_counting_error,
+direct,False,12,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12}
+```",15997,19,5.382036924362183,False,gemini-3.5-flash-lite,gemini-small,3,Q020,multi_step,hard,number,16.0,How many distinct order_id values contain 5 or more rows?,wrong,False,arithmetic_or_counting_error,
+direct,False,5.86,False,,,"```json
+{""cannot_answer"": false, ""answer"": 5.86}
+```",16001,21,1.558887004852295,False,gemini-3.5-flash-lite,gemini-small,3,Q021,multi_step,hard,number,7.06,"Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",wrong,False,arithmetic_or_counting_error,
+direct,False,12053.48,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12053.48}
+```",16003,25,2.0128114223480225,False,gemini-3.5-flash-lite,gemini-small,3,Q022,multi_step,hard,number,3638.25,"Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",wrong,False,arithmetic_or_counting_error,
+direct,False,128,False,,,"```json
+{""cannot_answer"": false, ""answer"": 128}
+```",15994,20,1.3876471519470215,False,gemini-3.5-flash-lite,gemini-small,3,Q023,lookup,easy,number,248.0,How many rows have country equal to 'United Kingdom'?,wrong,False,arithmetic_or_counting_error,
+direct,False,12513.79,False,,,"```json
+{""cannot_answer"": false, ""answer"": 12513.79}
+```",15999,25,6.838037729263306,False,gemini-3.5-flash-lite,gemini-small,3,Q024,aggregation,medium,number,4073.3,What is the total revenue of all rows with country equal to 'United Kingdom'?,wrong,False,arithmetic_or_counting_error,
+direct,False,21,False,,,"```json
+{""cannot_answer"": false, ""answer"": 21}
+```",15994,19,5.523728132247925,False,gemini-3.5-flash-lite,gemini-small,3,Q025,lookup,easy,number,20.0,How many rows have country equal to 'EIRE'?,wrong,False,arithmetic_or_counting_error,
+direct,False,506.0,False,,,"```json
+{""cannot_answer"": false, ""answer"": 506.0}
+```",15999,22,3.308440923690796,False,gemini-3.5-flash-lite,gemini-small,3,Q026,aggregation,medium,number,488.6,What is the total revenue of all rows with country equal to 'EIRE'?,wrong,False,arithmetic_or_counting_error,
+code,False,0.0,False,"df_2017 = df[pd.to_datetime(df['order_datetime']).dt.year == 2017].copy()
+
+if df_2017.empty:
+    answer = 0.0
+else:
+    df_2017['revenue'] = df_2017['qty'] * df_2017['unit_price']
+    order_revenue = df_2017.groupby('order_id')['revenue'].sum()
+    answer = order_revenue.mean()",,"```python
+df_2017 = df[pd.to_datetime(df['order_datetime']).dt.year == 2017].copy()
+
+if df_2017.empty:
+    answer = 0.0
+else:
+    df_2017['revenue'] = df_2017['qty'] * df_2017['unit_price']
+    order_revenue = df_2017.groupby('order_id')['revenue'].sum()
+    answer = order_revenue.mean()
+```",722,126,1.0808823108673096,False,gemini-3.5-flash-lite,gemini-small,2,Q060,unanswerable,hard,abstain,CANNOT_ANSWER,What was the average revenue per order in the year 2017?,hallucinated,False,hallucinated_answer,
+check,False,0.0,False,"df_2017 = df[pd.to_datetime(df['order_datetime']).dt.year == 2017].copy()
+
+if df_2017.empty:
+    answer = 0.0
+else:
+    df_2017['revenue'] = df_2017['qty'] * df_2017['unit_price']
+    order_revenue = df_2017.groupby('order_id')['revenue'].sum()
+    answer = order_revenue.mean()",,"{""cannot_answer"": false, ""answer"": 0.0}",1606,141,5.639605760574341,False,gemini-3.5-flash-lite,gemini-small,2,Q060,unanswerable,hard,abstain,CANNOT_ANSWER,What was the average revenue per order in the year 2017?,hallucinated,False,hallucinated_answer,
+direct,False,18,False,,,"```json
+{""cannot_answer"": false, ""answer"": 18}
+```",15997,19,1.4013001918792725,False,gemini-3.5-flash-lite,gemini-small,3,Q004,lookup,easy,number,24.0,How many distinct customer_id values are there? Ignore missing values.,wrong,False,arithmetic_or_counting_error,
+direct,False,128.59,False,,,"```json
+{""cannot_answer"": false, ""answer"": 128.59}
+```",16011,23,1.7838351726531982,False,gemini-3.5-flash-lite,gemini-small,3,Q044,aggregation,medium,number,556.26,What is the total revenue of all rows with order_datetime in the month 2012-10 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1210.65,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1210.65}
+```",16011,24,4.054123640060425,False,gemini-3.5-flash-lite,gemini-small,3,Q045,aggregation,medium,number,537.08,What is the total revenue of all rows with order_datetime in the month 2013-03 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,-7.95,False,,,"```json
+{""cannot_answer"": false, ""answer"": -7.95}
+```",16011,21,4.271732807159424,False,gemini-3.5-flash-lite,gemini-small,3,Q046,aggregation,medium,number,123.13,What is the total revenue of all rows with order_datetime in the month 2013-04 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,105.12,False,,,"```json
+{""cannot_answer"": false, ""answer"": 105.12}
+```",16011,23,2.4709508419036865,False,gemini-3.5-flash-lite,gemini-small,3,Q047,aggregation,medium,number,119.04,What is the total revenue of all rows with order_datetime in the month 2013-06 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1056.95,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1056.95}
+```",16011,24,1.9579460620880127,False,gemini-3.5-flash-lite,gemini-small,3,Q048,aggregation,medium,number,488.6,What is the total revenue of all rows with order_datetime in the month 2013-07 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1289.87,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1289.87}
+```",16011,24,1.5349845886230469,False,gemini-3.5-flash-lite,gemini-small,3,Q049,aggregation,medium,number,1273.44,What is the total revenue of all rows with order_datetime in the month 2013-08 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,False,1289.87,False,,,"```json
+{""cannot_answer"": false, ""answer"": 1289.87}
+```",16011,24,1.6996080875396729,False,gemini-3.5-flash-lite,gemini-small,3,Q050,aggregation,medium,number,501.48,What is the total revenue of all rows with order_datetime in the month 2013-10 (YYYY-MM)?,wrong,False,arithmetic_or_counting_error,
+direct,True,None,False,,,"```json
+{""cannot_answer"": true, ""answer"": null}
+```",16002,17,2.011998414993286,False,gemini-3.5-flash-lite,gemini-small,3,Q052,false_premise,medium,number,0.0,What is the total revenue of all rows with product_code 'ZZZ999'?,over_abstain,False,over_cautious,
+check,True,None,False,"# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df['order_id'].astype(str).str.startswith('C')]
+
+# Total revenue per country
+country_rev = non_cancelled.groupby('country', as_index=False)['revenue'].sum()
+
+# Difference between highest and lowest country revenue
+max_rev = country_rev['revenue'].max()
+min_rev = country_rev['revenue'].min()
+answer = max_rev - min_rev",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1485,358,10.551274061203003,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q022,multi_step,hard,number,3638.25,"Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",over_abstain,False,over_cautious,
+check,True,None,False,"# Filter rows with product_code '22926' and sum the qty column
+answer = df.loc[df['product_code'] == '22926', 'qty'].sum()",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1387,233,4.449692487716675,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q028,aggregation,medium,number,2.0,What is the total qty over all rows with product_code '22926'?,over_abstain,False,over_cautious,
+code,False,15084,False,"import pandas as pd
+import numpy as np
+
+# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude rows where customer_id is missing
+valid = df.dropna(subset=['customer_id'])
+
+# If there are no valid customers, we cannot answer
+if valid.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Sum revenue per customer
+    revenue_by_customer = valid.groupby('customer_id')['revenue'].sum()
+
+    # Identify the customer with the highest total revenue
+    best_customer_id = revenue_by_customer.idxmax()
+
+    # Store result
+    answer = int(best_customer_id)
+
+# Clean up the helper column if you don't want it further downstream
+df.drop(columns=['revenue'], inplace=True)",,"```python
+import pandas as pd
+import numpy as np
+
+# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude rows where customer_id is missing
+valid = df.dropna(subset=['customer_id'])
+
+# If there are no valid customers, we cannot answer
+if valid.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Sum revenue per customer
+    revenue_by_customer = valid.groupby('customer_id')['revenue'].sum()
+
+    # Identify the customer with the highest total revenue
+    best_customer_id = revenue_by_customer.idxmax()
+
+    # Store result
+    answer = int(best_customer_id)
+
+# Clean up the helper column if you don't want it further downstream
+df.drop(columns=['revenue'], inplace=True)
+```",650,308,0.9498007297515869,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q062,ambiguous,hard,abstain,CANNOT_ANSWER,Who is our best customer?,hallucinated,False,hallucinated_answer,
+code,False,60 CAKE CASES VINTAGE CHRISTMAS,False,"# Determine the best‑selling product by net quantity sold (including returns/cancellations)
+
+# Use product_name when available, otherwise fall back to the product_code as identifier
+df = df.copy()  # avoid SettingWithCopy warnings
+df['product'] = df['product_name'].fillna(df['product_code'].astype(str))
+
+# Sum the quantity per product (qty can be negative for returns/cancellations)
+product_qty = df.groupby('product')['qty'].sum()
+
+# Identify the product with the highest total quantity
+best_product = product_qty.idxmax()
+
+# Store the result
+answer = best_product",,"```python
+# Determine the best‑selling product by net quantity sold (including returns/cancellations)
+
+# Use product_name when available, otherwise fall back to the product_code as identifier
+df = df.copy()  # avoid SettingWithCopy warnings
+df['product'] = df['product_name'].fillna(df['product_code'].astype(str))
+
+# Sum the quantity per product (qty can be negative for returns/cancellations)
+product_qty = df.groupby('product')['qty'].sum()
+
+# Identify the product with the highest total quantity
+best_product = product_qty.idxmax()
+
+# Store the result
+answer = best_product
+```",651,410,2.1580324172973633,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q063,ambiguous,hard,abstain,CANNOT_ANSWER,Which product is the best seller?,hallucinated,False,hallucinated_answer,
+code,False,United Kingdom,False,"# Compute revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Sum revenue per country
+country_revenue = df.groupby('country')['revenue'].sum()
+
+# Country with the highest total revenue
+answer = country_revenue.idxmax()",,"```python
+# Compute revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Sum revenue per country
+country_revenue = df.groupby('country')['revenue'].sum()
+
+# Country with the highest total revenue
+answer = country_revenue.idxmax()
+```",652,220,2.7243435382843018,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q064,ambiguous,hard,abstain,CANNOT_ANSWER,Which country is the most important market?,hallucinated,False,hallucinated_answer,
+code,False,120.0,False,"# Compute typical order size (median number of items per non‑cancelled order)
+
+# Exclude cancelled orders (order_id starting with 'C')
+valid_orders = df[~df['order_id'].astype(str).str.startswith('C')]
+
+# Consider only positive quantities (exclude returns / negative adjustments)
+valid_orders = valid_orders[valid_orders['qty'] > 0]
+
+# Sum quantity per order
+order_qty = valid_orders.groupby('order_id')['qty'].sum()
+
+# Typical order size: median of the per‑order quantities
+answer = float(order_qty.median())",,"```python
+# Compute typical order size (median number of items per non‑cancelled order)
+
+# Exclude cancelled orders (order_id starting with 'C')
+valid_orders = df[~df['order_id'].astype(str).str.startswith('C')]
+
+# Consider only positive quantities (exclude returns / negative adjustments)
+valid_orders = valid_orders[valid_orders['qty'] > 0]
+
+# Sum quantity per order
+order_qty = valid_orders.groupby('order_id')['qty'].sum()
+
+# Typical order size: median of the per‑order quantities
+answer = float(order_qty.median())
+```",651,350,1.1219608783721924,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q065,ambiguous,hard,abstain,CANNOT_ANSWER,What is the typical order size?,hallucinated,False,hallucinated_answer,
+check,False,120.0,False,"# Compute typical order size (median number of items per non‑cancelled order)
+
+# Exclude cancelled orders (order_id starting with 'C')
+valid_orders = df[~df['order_id'].astype(str).str.startswith('C')]
+
+# Consider only positive quantities (exclude returns / negative adjustments)
+valid_orders = valid_orders[valid_orders['qty'] > 0]
+
+# Sum quantity per order
+order_qty = valid_orders.groupby('order_id')['qty'].sum()
+
+# Typical order size: median of the per‑order quantities
+answer = float(order_qty.median())",,"{
+  ""cannot_answer"": false,
+  ""answer"": 120.0
+}",1454,752,4.682007789611816,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q065,ambiguous,hard,abstain,CANNOT_ANSWER,What is the typical order size?,hallucinated,False,hallucinated_answer,
+code,False,0.2083,False,"# Calculate overall customer churn rate based on cancelled orders (order_id starting with 'C')
+# Churn = proportion of distinct customers who have at least one cancelled order.
+
+# Ensure we work only with rows that have a valid customer_id
+cust_ids = df['customer_id'].dropna()
+
+# Total distinct customers
+total_customers = cust_ids.nunique()
+
+# Distinct customers with at least one cancelled order
+cancelled_customers = (
+    df[df['order_id'].str.startswith('C', na=False)]['customer_id']
+    .dropna()
+    .nunique()
+)
+
+# Compute churn rate, handling edge cases
+if total_customers == 0:
+    answer = ""CANNOT_ANSWER""
+else:
+    answer = cancelled_customers / total_customers
+
+# answer now holds the churn rate as a float (or the fallback string)",,"```python
+# Calculate overall customer churn rate based on cancelled orders (order_id starting with 'C')
+# Churn = proportion of distinct customers who have at least one cancelled order.
+
+# Ensure we work only with rows that have a valid customer_id
+cust_ids = df['customer_id'].dropna()
+
+# Total distinct customers
+total_customers = cust_ids.nunique()
+
+# Distinct customers with at least one cancelled order
+cancelled_customers = (
+    df[df['order_id'].str.startswith('C', na=False)]['customer_id']
+    .dropna()
+    .nunique()
+)
+
+# Compute churn rate, handling edge cases
+if total_customers == 0:
+    answer = ""CANNOT_ANSWER""
+else:
+    answer = cancelled_customers / total_customers
+
+# answer now holds the churn rate as a float (or the fallback string)
+```",652,507,1.765638828277588,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q066,ambiguous,hard,abstain,CANNOT_ANSWER,What was the overall customer churn rate?,hallucinated,False,hallucinated_answer,
+check,False,0.2083,False,"# Calculate overall customer churn rate based on cancelled orders (order_id starting with 'C')
+# Churn = proportion of distinct customers who have at least one cancelled order.
+
+# Ensure we work only with rows that have a valid customer_id
+cust_ids = df['customer_id'].dropna()
+
+# Total distinct customers
+total_customers = cust_ids.nunique()
+
+# Distinct customers with at least one cancelled order
+cancelled_customers = (
+    df[df['order_id'].str.startswith('C', na=False)]['customer_id']
+    .dropna()
+    .nunique()
+)
+
+# Compute churn rate, handling edge cases
+if total_customers == 0:
+    answer = ""CANNOT_ANSWER""
+else:
+    answer = cancelled_customers / total_customers
+
+# answer now holds the churn rate as a float (or the fallback string)",,"{
+  ""cannot_answer"": false,
+  ""answer"": 0.2083
+}",1514,1004,6.404526233673096,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q066,ambiguous,hard,abstain,CANNOT_ANSWER,What was the overall customer churn rate?,hallucinated,False,hallucinated_answer,
+check,True,None,False,"# Filter out cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df['order_id'].astype(str).str.startswith('C')]
+
+# Keep rows where customer_id is missing
+missing_customer = non_cancelled[non_cancelled['customer_id'].isna()]
+
+# Calculate revenue per row
+revenue = missing_customer['qty'] * missing_customer['unit_price']
+
+# Total revenue
+answer = revenue.sum()",,"{""cannot_answer"": true, ""answer"": null}",1449,418,2.2992992401123047,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q021,multi_step,hard,number,7.06,"Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",over_abstain,False,over_cautious,
+check,True,None,False,"# Filter rows for United Kingdom
+uk_rows = df[df['country'] == 'United Kingdom']
+
+# Compute revenue per row
+revenue = uk_rows['qty'] * uk_rows['unit_price']
+
+# Sum the revenue
+answer = revenue.sum()",,"{""cannot_answer"": true, ""answer"": null}",1408,519,2.932227849960327,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q024,aggregation,medium,number,4073.3,What is the total revenue of all rows with country equal to 'United Kingdom'?,over_abstain,False,over_cautious,
+check,True,None,False,"# Compute total revenue for rows where country is 'EIRE'
+revenue = df['qty'] * df['unit_price']
+answer = revenue[df['country'] == 'EIRE'].sum()",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1396,379,1.6614415645599365,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q026,aggregation,medium,number,488.6,What is the total revenue of all rows with country equal to 'EIRE'?,over_abstain,False,over_cautious,
+check,True,None,False,"# Ensure order_datetime is datetime type
+df[""order_datetime""] = pd.to_datetime(df[""order_datetime""], errors=""coerce"")
+
+# Filter rows for April 2013
+mask = (df[""order_datetime""].dt.year == 2013) & (df[""order_datetime""].dt.month == 4)
+filtered = df.loc[mask]
+
+# Compute revenue per row
+revenue = filtered[""qty""] * filtered[""unit_price""]
+
+# Total revenue
+answer = revenue.sum()",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1467,438,1.7387499809265137,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q046,aggregation,medium,number,123.13,What is the total revenue of all rows with order_datetime in the month 2013-04 (YYYY-MM)?,over_abstain,False,over_cautious,
+check,True,None,False,"# Ensure order_datetime is a datetime dtype
+df['order_datetime'] = pd.to_datetime(df['order_datetime'], errors='coerce')
+
+# Compute revenue per row
+df['_revenue'] = df['qty'] * df['unit_price']
+
+# Filter rows that fall in June 2013
+mask = df['order_datetime'].dt.to_period('M') == pd.Period('2013-06')
+total_revenue = df.loc[mask, '_revenue'].sum()
+
+# Store the result
+answer = total_revenue",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1478,374,2.371835231781006,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q047,aggregation,medium,number,119.04,What is the total revenue of all rows with order_datetime in the month 2013-06 (YYYY-MM)?,over_abstain,False,over_cautious,
+code,False,15084,False,"# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude cancelled orders (order_id that start with 'C')
+non_cancelled = ~df['order_id'].astype(str).str.startswith('C')
+
+# Keep rows that have a customer_id
+valid = df[non_cancelled & df['customer_id'].notna()]
+
+# Sum revenue per customer
+customer_rev = valid.groupby('customer_id')['revenue'].sum()
+
+# Determine the best customer
+if customer_rev.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    answer = customer_rev.idxmax()   # customer_id with the highest total revenue",,"```python
+# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude cancelled orders (order_id that start with 'C')
+non_cancelled = ~df['order_id'].astype(str).str.startswith('C')
+
+# Keep rows that have a customer_id
+valid = df[non_cancelled & df['customer_id'].notna()]
+
+# Sum revenue per customer
+customer_rev = valid.groupby('customer_id')['revenue'].sum()
+
+# Determine the best customer
+if customer_rev.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    answer = customer_rev.idxmax()   # customer_id with the highest total revenue
+```",650,412,1.3165805339813232,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q062,ambiguous,hard,abstain,CANNOT_ANSWER,Who is our best customer?,hallucinated,False,hallucinated_answer,
+check,False,15084,False,"# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude cancelled orders (order_id that start with 'C')
+non_cancelled = ~df['order_id'].astype(str).str.startswith('C')
+
+# Keep rows that have a customer_id
+valid = df[non_cancelled & df['customer_id'].notna()]
+
+# Sum revenue per customer
+customer_rev = valid.groupby('customer_id')['revenue'].sum()
+
+# Determine the best customer
+if customer_rev.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    answer = customer_rev.idxmax()   # customer_id with the highest total revenue",,"{""cannot_answer"": false, ""answer"": 15084}",1473,677,2.3158600330352783,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q062,ambiguous,hard,abstain,CANNOT_ANSWER,Who is our best customer?,hallucinated,False,hallucinated_answer,
+code,False,60 CAKE CASES VINTAGE CHRISTMAS,False,"# Assume df is already loaded
+import pandas as pd
+
+# Exclude cancelled orders (order_id starting with 'C')
+completed = df[~df[""order_id""].astype(str).str.startswith(""C"")].copy()
+
+# Use product_name when available, otherwise fall back to product_code as identifier
+completed[""product_identifier""] = completed[""product_name""].fillna(completed[""product_code""])
+
+# Aggregate total quantity sold per product (including returns as negative qty)
+quantity_by_product = completed.groupby(""product_identifier"")[""qty""].sum()
+
+# Identify the product with the highest total quantity
+if not quantity_by_product.empty:
+    best_seller = quantity_by_product.idxmax()
+    answer = best_seller
+else:
+    answer = ""CANNOT_ANSWER""",,"```python
+# Assume df is already loaded
+import pandas as pd
+
+# Exclude cancelled orders (order_id starting with 'C')
+completed = df[~df[""order_id""].astype(str).str.startswith(""C"")].copy()
+
+# Use product_name when available, otherwise fall back to product_code as identifier
+completed[""product_identifier""] = completed[""product_name""].fillna(completed[""product_code""])
+
+# Aggregate total quantity sold per product (including returns as negative qty)
+quantity_by_product = completed.groupby(""product_identifier"")[""qty""].sum()
+
+# Identify the product with the highest total quantity
+if not quantity_by_product.empty:
+    best_seller = quantity_by_product.idxmax()
+    answer = best_seller
+else:
+    answer = ""CANNOT_ANSWER""
+```",651,427,1.3727223873138428,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q063,ambiguous,hard,abstain,CANNOT_ANSWER,Which product is the best seller?,hallucinated,False,hallucinated_answer,
+code,False,United Kingdom,False,"# Calculate revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# If the DataFrame is empty, we cannot determine the most important market
+if df.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Sum revenue by country
+    revenue_by_country = df.groupby('country')['revenue'].sum()
+
+    # Identify the country with the highest total revenue
+    answer = revenue_by_country.idxmax()",,"```python
+# Calculate revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# If the DataFrame is empty, we cannot determine the most important market
+if df.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Sum revenue by country
+    revenue_by_country = df.groupby('country')['revenue'].sum()
+
+    # Identify the country with the highest total revenue
+    answer = revenue_by_country.idxmax()
+```",652,262,0.9481170177459717,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q064,ambiguous,hard,abstain,CANNOT_ANSWER,Which country is the most important market?,hallucinated,False,hallucinated_answer,
+code,False,70.0,False,"# Compute total quantity per order (including cancellations/returns)
+order_qty = df.groupby('order_id')['qty'].sum()
+
+# Typical order size: median of the per‑order quantities
+answer = order_qty.median()",,"```python
+# Compute total quantity per order (including cancellations/returns)
+order_qty = df.groupby('order_id')['qty'].sum()
+
+# Typical order size: median of the per‑order quantities
+answer = order_qty.median()
+```",651,236,1.026719331741333,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q065,ambiguous,hard,abstain,CANNOT_ANSWER,What is the typical order size?,hallucinated,False,hallucinated_answer,
+check,False,Incorrect - cancelled orders not excluded,False,"# Compute total quantity per order (including cancellations/returns)
+order_qty = df.groupby('order_id')['qty'].sum()
+
+# Typical order size: median of the per‑order quantities
+answer = order_qty.median()",,"{
+  ""cannot_answer"": false,
+  ""answer"": ""Incorrect - cancelled orders not excluded""
+}",1381,672,2.442216634750366,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q065,ambiguous,hard,abstain,CANNOT_ANSWER,What is the typical order size?,hallucinated,False,hallucinated_answer,
+check,True,None,False,"# Filter out cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df['order_id'].astype(str).str.startswith('C')]
+
+# Keep rows where customer_id is missing
+missing_customer = non_cancelled[non_cancelled['customer_id'].isna()]
+
+# Calculate revenue per row
+revenue = missing_customer['qty'] * missing_customer['unit_price']
+
+# Sum the revenue
+answer = revenue.sum()",,"{""cannot_answer"": true, ""answer"": null}",1450,299,1.8042783737182617,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q021,multi_step,hard,number,7.06,"Excluding cancelled orders, what is the total revenue from rows with a missing customer_id?",over_abstain,False,over_cautious,
+check,True,None,False,"# Filter out cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df['order_id'].astype(str).str.startswith('C')].copy()
+
+# If there are no non‑cancelled rows, we cannot answer
+if non_cancelled.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Compute revenue per row
+    non_cancelled['revenue'] = non_cancelled['qty'] * non_cancelled['unit_price']
+
+    # Total revenue per country
+    country_rev = non_cancelled.groupby('country')['revenue'].sum()
+
+    # If no countries (unlikely), cannot answer
+    if country_rev.empty:
+        answer = ""CANNOT_ANSWER""
+    else:
+        # Difference between highest and lowest total revenue
+        answer = country_rev.max() - country_rev.min()",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1537,632,2.3934199810028076,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q022,multi_step,hard,number,3638.25,"Excluding cancelled orders, what is the difference between the highest and the lowest total revenue of any country?",over_abstain,False,over_cautious,
+check,True,None,False,"# Compute revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Filter rows where country is 'EIRE' and sum the revenue
+answer = df.loc[df['country'] == 'EIRE', 'revenue'].sum()",,"{
+  ""cannot_answer"": true,
+  ""answer"": null
+}",1412,639,3.5898587703704834,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q026,aggregation,medium,number,488.6,What is the total revenue of all rows with country equal to 'EIRE'?,over_abstain,False,over_cautious,
+code,False,15084,False,"# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude rows where order_id starts with 'C' (cancelled orders)
+# and rows with missing customer_id
+valid = df[~df['order_id'].astype(str).str.startswith('C') & df['customer_id'].notna()]
+
+# Aggregate total revenue per customer
+customer_revenue = valid.groupby('customer_id')['revenue'].sum()
+
+# Identify the customer with the highest total revenue
+if not customer_revenue.empty:
+    best_customer_id = customer_revenue.idxmax()
+    answer = best_customer_id
+else:
+    answer = ""CANNOT_ANSWER""",,"```python
+# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude rows where order_id starts with 'C' (cancelled orders)
+# and rows with missing customer_id
+valid = df[~df['order_id'].astype(str).str.startswith('C') & df['customer_id'].notna()]
+
+# Aggregate total revenue per customer
+customer_revenue = valid.groupby('customer_id')['revenue'].sum()
+
+# Identify the customer with the highest total revenue
+if not customer_revenue.empty:
+    best_customer_id = customer_revenue.idxmax()
+    answer = best_customer_id
+else:
+    answer = ""CANNOT_ANSWER""
+```",650,274,0.7879784107208252,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q062,ambiguous,hard,abstain,CANNOT_ANSWER,Who is our best customer?,hallucinated,False,hallucinated_answer,
+check,False,15084,False,"# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Exclude rows where order_id starts with 'C' (cancelled orders)
+# and rows with missing customer_id
+valid = df[~df['order_id'].astype(str).str.startswith('C') & df['customer_id'].notna()]
+
+# Aggregate total revenue per customer
+customer_revenue = valid.groupby('customer_id')['revenue'].sum()
+
+# Identify the customer with the highest total revenue
+if not customer_revenue.empty:
+    best_customer_id = customer_revenue.idxmax()
+    answer = best_customer_id
+else:
+    answer = ""CANNOT_ANSWER""",,"{""cannot_answer"": false, ""answer"": 15084}",1476,490,1.7843716144561768,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q062,ambiguous,hard,abstain,CANNOT_ANSWER,Who is our best customer?,hallucinated,False,hallucinated_answer,
+code,False,60 CAKE CASES VINTAGE CHRISTMAS,False,"# Compute total quantity sold per product (including returns/cancellations)
+product_qty = df.groupby(['product_code', 'product_name'], as_index=False)['qty'].sum()
+
+# Identify the product with the highest net quantity
+best_row = product_qty.loc[product_qty['qty'].idxmax()]
+
+# Use product_name if it is not missing, otherwise fall back to product_code
+answer = best_row['product_name'] if pd.notna(best_row['product_name']) else best_row['product_code']",,"```python
+# Compute total quantity sold per product (including returns/cancellations)
+product_qty = df.groupby(['product_code', 'product_name'], as_index=False)['qty'].sum()
+
+# Identify the product with the highest net quantity
+best_row = product_qty.loc[product_qty['qty'].idxmax()]
+
+# Use product_name if it is not missing, otherwise fall back to product_code
+answer = best_row['product_name'] if pd.notna(best_row['product_name']) else best_row['product_code']
+```",651,265,1.0321035385131836,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q063,ambiguous,hard,abstain,CANNOT_ANSWER,Which product is the best seller?,hallucinated,False,hallucinated_answer,
+check,False,CAKE CASES VINTAGE CHRISTMAS,False,"# Compute total quantity sold per product (including returns/cancellations)
+product_qty = df.groupby(['product_code', 'product_name'], as_index=False)['qty'].sum()
+
+# Identify the product with the highest net quantity
+best_row = product_qty.loc[product_qty['qty'].idxmax()]
+
+# Use product_name if it is not missing, otherwise fall back to product_code
+answer = best_row['product_name'] if pd.notna(best_row['product_name']) else best_row['product_code']",,"{
+  ""cannot_answer"": false,
+  ""answer"": ""CAKE CASES VINTAGE CHRISTMAS""
+}",1446,872,2.614198684692383,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q063,ambiguous,hard,abstain,CANNOT_ANSWER,Which product is the best seller?,hallucinated,False,hallucinated_answer,
+code,False,United Kingdom,False,"# Calculate revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Aggregate revenue by country
+revenue_by_country = df.groupby('country')['revenue'].sum()
+
+# Identify the country with the highest total revenue
+answer = revenue_by_country.idxmax()",,"```python
+# Calculate revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Aggregate revenue by country
+revenue_by_country = df.groupby('country')['revenue'].sum()
+
+# Identify the country with the highest total revenue
+answer = revenue_by_country.idxmax()
+```",652,217,0.9153368473052979,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q064,ambiguous,hard,abstain,CANNOT_ANSWER,Which country is the most important market?,hallucinated,False,hallucinated_answer,
+code,False,99.0,False,"# Filter out cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df[""order_id""].astype(str).str.startswith(""C"")]
+
+# Compute total quantity per order
+order_qty = non_cancelled.groupby(""order_id"")[""qty""].sum()
+
+# Typical order size – using the median of the order quantities
+answer = order_qty.median()",,"```python
+# Filter out cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df[""order_id""].astype(str).str.startswith(""C"")]
+
+# Compute total quantity per order
+order_qty = non_cancelled.groupby(""order_id"")[""qty""].sum()
+
+# Typical order size – using the median of the order quantities
+answer = order_qty.median()
+```",651,350,1.6339433193206787,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q065,ambiguous,hard,abstain,CANNOT_ANSWER,What is the typical order size?,hallucinated,False,hallucinated_answer,
+check,False,99.0,False,"# Filter out cancelled orders (order_id starting with 'C')
+non_cancelled = df[~df[""order_id""].astype(str).str.startswith(""C"")]
+
+# Compute total quantity per order
+order_qty = non_cancelled.groupby(""order_id"")[""qty""].sum()
+
+# Typical order size – using the median of the order quantities
+answer = order_qty.median()",,"{
+  ""cannot_answer"": false,
+  ""answer"": 99.0
+}",1413,689,3.0224432945251465,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q065,ambiguous,hard,abstain,CANNOT_ANSWER,What is the typical order size?,hallucinated,False,hallucinated_answer,
+code,False,2013-08,False,"df['revenue'] = df['qty'] * df['unit_price']
+df['order_month'] = df['order_datetime'].dt.to_period('M')
+monthly_revenue = df.groupby('order_month')['revenue'].sum()
+best_month = monthly_revenue.idxmax()
+answer = str(best_month)",,"```python
+df['revenue'] = df['qty'] * df['unit_price']
+df['order_month'] = df['order_datetime'].dt.to_period('M')
+monthly_revenue = df.groupby('order_month')['revenue'].sum()
+best_month = monthly_revenue.idxmax()
+answer = str(best_month)
+```",715,81,1.203265905380249,False,gemini-3.5-flash-lite,gemini-small,1,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+check,False,2013-08,False,"df['revenue'] = df['qty'] * df['unit_price']
+df['order_month'] = df['order_datetime'].dt.to_period('M')
+monthly_revenue = df.groupby('order_month')['revenue'].sum()
+best_month = monthly_revenue.idxmax()
+answer = str(best_month)",,"{""cannot_answer"": false, ""answer"": ""2013-08""}",1551,100,2.1991689205169678,False,gemini-3.5-flash-lite,gemini-small,1,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+code,False,2013-08,False,"# Calculate revenue for each row
+revenue = df['qty'] * df['unit_price']
+
+# Extract month-year from order_datetime
+months = df['order_datetime'].dt.to_period('M')
+
+# Group by month and sum the revenue
+monthly_revenue = revenue.groupby(months).sum()
+
+# Find the month with the highest revenue
+best_month = monthly_revenue.idxmax()
+
+# Store the answer as a string representation of the period (or year-month)
+answer = str(best_month)",,"```python
+# Calculate revenue for each row
+revenue = df['qty'] * df['unit_price']
+
+# Extract month-year from order_datetime
+months = df['order_datetime'].dt.to_period('M')
+
+# Group by month and sum the revenue
+monthly_revenue = revenue.groupby(months).sum()
+
+# Find the month with the highest revenue
+best_month = monthly_revenue.idxmax()
+
+# Store the answer as a string representation of the period (or year-month)
+answer = str(best_month)
+```",715,122,1.7706758975982666,False,gemini-3.5-flash-lite,gemini-small,2,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+check,False,2013-08,False,"# Calculate revenue for each row
+revenue = df['qty'] * df['unit_price']
+
+# Extract month-year from order_datetime
+months = df['order_datetime'].dt.to_period('M')
+
+# Group by month and sum the revenue
+monthly_revenue = revenue.groupby(months).sum()
+
+# Find the month with the highest revenue
+best_month = monthly_revenue.idxmax()
+
+# Store the answer as a string representation of the period (or year-month)
+answer = str(best_month)",,"```json
+{""cannot_answer"": false, ""answer"": ""2013-08""}
+```",1592,146,3.02337646484375,False,gemini-3.5-flash-lite,gemini-small,2,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+code,False,19,False,"# Filter rows for the given product_code
+mask = df['product_code'] == '20725'
+filtered = df[mask]
+
+# If there are no rows for this product, we cannot determine stock level
+if filtered.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Stock level is the net quantity (positive purchases minus returns/cancellations)
+    answer = filtered['qty'].sum()",,"```python
+# Filter rows for the given product_code
+mask = df['product_code'] == '20725'
+filtered = df[mask]
+
+# If there are no rows for this product, we cannot determine stock level
+if filtered.empty:
+    answer = ""CANNOT_ANSWER""
+else:
+    # Stock level is the net quantity (positive purchases minus returns/cancellations)
+    answer = filtered['qty'].sum()
+```",658,260,1.1829767227172852,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q071,unanswerable,hard,abstain,CANNOT_ANSWER,What is the current stock level of product_code '20725'?,hallucinated,False,hallucinated_answer,
+code,False,2013-08,False,"# Ensure the order_datetime column is of datetime type
+df['order_datetime'] = pd.to_datetime(df['order_datetime'], errors='coerce')
+
+# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Extract year‑month period for grouping
+df['order_month'] = df['order_datetime'].dt.to_period('M')
+
+# Sum revenue per month
+monthly_revenue = df.groupby('order_month')['revenue'].sum()
+
+# Identify the month with the highest total revenue
+if not monthly_revenue.empty:
+    best_month = monthly_revenue.idxmax()          # e.g. Period('2012-09')
+    answer = str(best_month)                       # format as 'YYYY-MM'
+else:
+    answer = ""CANNOT_ANSWER""",,"```python
+# Ensure the order_datetime column is of datetime type
+df['order_datetime'] = pd.to_datetime(df['order_datetime'], errors='coerce')
+
+# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Extract year‑month period for grouping
+df['order_month'] = df['order_datetime'].dt.to_period('M')
+
+# Sum revenue per month
+monthly_revenue = df.groupby('order_month')['revenue'].sum()
+
+# Identify the month with the highest total revenue
+if not monthly_revenue.empty:
+    best_month = monthly_revenue.idxmax()          # e.g. Period('2012-09')
+    answer = str(best_month)                       # format as 'YYYY-MM'
+else:
+    answer = ""CANNOT_ANSWER""
+```",653,424,1.1648294925689697,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+code,False,"[['22423', 'REGENCY CAKESTAND 3 TIER', 12, 153.0], ['22236', 'CAKE STAND 3 TIER MAGIC GARDEN', 9, 114.75], ['21258', 'VICTORIAN SEWING BOX LARGE', 9, 100.35], ['22988', 'SOLDIERS EGG CUP ', 72, 90.0],",False,"# Calculate revenue per order line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Aggregate by product (code and name)
+product_perf = (
+    df.groupby(['product_code', 'product_name'], as_index=False)
+      .agg(total_qty=('qty', 'sum'),
+           total_revenue=('revenue', 'sum'))
+      .sort_values('total_revenue', ascending=False)
+)
+
+# Keep the full list; you can look at the top rows to see which products are doing best
+answer = product_perf",,"```python
+# Calculate revenue per order line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Aggregate by product (code and name)
+product_perf = (
+    df.groupby(['product_code', 'product_name'], as_index=False)
+      .agg(total_qty=('qty', 'sum'),
+           total_revenue=('revenue', 'sum'))
+      .sort_values('total_revenue', ascending=False)
+)
+
+# Keep the full list; you can look at the top rows to see which products are doing best
+answer = product_perf
+```",650,265,1.042558193206787,False,openai/gpt-oss-120b,gpt-oss-120b,1,Q083,ambiguous,hard,abstain,CANNOT_ANSWER,Which products are doing well?,hallucinated,False,hallucinated_answer,
+code,False,19,False,"# Calculate the net quantity (stock level) for product_code '20725'
+stock_level = df.loc[df['product_code'] == '20725', 'qty'].sum()
+
+# If there are no rows for this product, the sum will be 0, which we treat as the stock level.
+answer = stock_level",,"```python
+# Calculate the net quantity (stock level) for product_code '20725'
+stock_level = df.loc[df['product_code'] == '20725', 'qty'].sum()
+
+# If there are no rows for this product, the sum will be 0, which we treat as the stock level.
+answer = stock_level
+```",658,198,0.8985471725463867,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q071,unanswerable,hard,abstain,CANNOT_ANSWER,What is the current stock level of product_code '20725'?,hallucinated,False,hallucinated_answer,
+code,False,2013-08,False,"# Ensure datetime column is proper dtype
+df[""order_datetime""] = pd.to_datetime(df[""order_datetime""], errors=""coerce"")
+
+# Compute revenue per line
+df[""revenue""] = df[""qty""] * df[""unit_price""]
+
+# Create a Year-Month string for each row
+df[""year_month""] = df[""order_datetime""].dt.to_period(""M"").astype(str)
+
+# Sum revenue by month
+monthly_rev = df.groupby(""year_month"")[""revenue""].sum()
+
+# Identify the month with the highest total revenue
+answer = monthly_rev.idxmax()",,"```python
+# Ensure datetime column is proper dtype
+df[""order_datetime""] = pd.to_datetime(df[""order_datetime""], errors=""coerce"")
+
+# Compute revenue per line
+df[""revenue""] = df[""qty""] * df[""unit_price""]
+
+# Create a Year-Month string for each row
+df[""year_month""] = df[""order_datetime""].dt.to_period(""M"").astype(str)
+
+# Sum revenue by month
+monthly_rev = df.groupby(""year_month"")[""revenue""].sum()
+
+# Identify the month with the highest total revenue
+answer = monthly_rev.idxmax()
+```",653,386,1.2193536758422852,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+code,False,United Kingdom,False,"import pandas as pd
+import numpy as np
+
+# Compute revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Extract year from order_datetime
+df['order_year'] = pd.DatetimeIndex(df['order_datetime']).year
+
+# Aggregate revenue by country and year
+yearly_rev = (
+    df.groupby(['country', 'order_year'])['revenue']
+    .sum()
+    .reset_index()
+)
+
+# Pivot to have years as columns for easier growth calculation
+pivot = yearly_rev.pivot(index='country', columns='order_year', values='revenue')
+
+# Determine earliest and latest year present in the data
+years = sorted(pivot.columns.dropna())
+if len(years) < 2:
+    answer = ""CANNOT_ANSWER""
+else:
+    earliest, latest = years[0], years[-1]
+
+    # Compute growth: (latest - earliest) / |earliest|
+    growth = (pivot[latest] - pivot[earliest]) / pivot[earliest].replace(0, np.nan)
+
+    # Remove countries where earliest revenue is zero (undefined growth)
+    growth = growth.dropna()
+
+    if growth.empty:
+        answer = ""CANNOT_ANSWER""
+    else:
+        # Country with the highest positive growth
+        answer = growth.idxmax()",,"```python
+import pandas as pd
+import numpy as np
+
+# Compute revenue per row
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Extract year from order_datetime
+df['order_year'] = pd.DatetimeIndex(df['order_datetime']).year
+
+# Aggregate revenue by country and year
+yearly_rev = (
+    df.groupby(['country', 'order_year'])['revenue']
+    .sum()
+    .reset_index()
+)
+
+# Pivot to have years as columns for easier growth calculation
+pivot = yearly_rev.pivot(index='country', columns='order_year', values='revenue')
+
+# Determine earliest and latest year present in the data
+years = sorted(pivot.columns.dropna())
+if len(years) < 2:
+    answer = ""CANNOT_ANSWER""
+else:
+    earliest, latest = years[0], years[-1]
+
+    # Compute growth: (latest - earliest) / |earliest|
+    growth = (pivot[latest] - pivot[earliest]) / pivot[earliest].replace(0, np.nan)
+
+    # Remove countries where earliest revenue is zero (undefined growth)
+    growth = growth.dropna()
+
+    if growth.empty:
+        answer = ""CANNOT_ANSWER""
+    else:
+        # Country with the highest positive growth
+        answer = growth.idxmax()
+```",651,478,1.3865482807159424,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q077,ambiguous,hard,abstain,CANNOT_ANSWER,Which country is growing the fastest?,hallucinated,False,hallucinated_answer,
+code,False,"Net revenue: £4,561.90; Order lines: 268; Distinct orders: 26; Distinct customers: 24; Avg revenue per order: £175.46",False,"# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Net revenue (including cancellations/returns)
+net_revenue = df['revenue'].sum()
+
+# Total number of order lines (rows)
+total_rows = len(df)
+
+# Number of distinct orders (order_id)
+total_orders = df['order_id'].nunique()
+
+# Number of distinct customers (ignore missing)
+total_customers = df['customer_id'].nunique()
+
+# Average revenue per order (net)
+# First aggregate revenue by order_id, then average
+order_rev = df.groupby('order_id')['revenue'].sum()
+avg_rev_per_order = order_rev.mean()
+
+# Build a concise health summary string
+answer = (
+    f""Net revenue: £{net_revenue:,.2f}; ""
+    f""Order lines: {total_rows}; ""
+    f""Distinct orders: {total_orders}; ""
+    f""Distinct customers: {total_customers}; ""
+    f""Avg revenue per order: £{avg_rev_per_order:,.2f}""
+)",,"```python
+# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Net revenue (including cancellations/returns)
+net_revenue = df['revenue'].sum()
+
+# Total number of order lines (rows)
+total_rows = len(df)
+
+# Number of distinct orders (order_id)
+total_orders = df['order_id'].nunique()
+
+# Number of distinct customers (ignore missing)
+total_customers = df['customer_id'].nunique()
+
+# Average revenue per order (net)
+# First aggregate revenue by order_id, then average
+order_rev = df.groupby('order_id')['revenue'].sum()
+avg_rev_per_order = order_rev.mean()
+
+# Build a concise health summary string
+answer = (
+    f""Net revenue: £{net_revenue:,.2f}; ""
+    f""Order lines: {total_rows}; ""
+    f""Distinct orders: {total_orders}; ""
+    f""Distinct customers: {total_customers}; ""
+    f""Avg revenue per order: £{avg_rev_per_order:,.2f}""
+)
+```",650,456,1.101203441619873,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q081,ambiguous,hard,abstain,CANNOT_ANSWER,How healthy is the business?,hallucinated,False,hallucinated_answer,
+check,False,Bug: cancelled orders (order_id starting with 'C') are not excluded from the revenue calculations.,False,"# Calculate revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Net revenue (including cancellations/returns)
+net_revenue = df['revenue'].sum()
+
+# Total number of order lines (rows)
+total_rows = len(df)
+
+# Number of distinct orders (order_id)
+total_orders = df['order_id'].nunique()
+
+# Number of distinct customers (ignore missing)
+total_customers = df['customer_id'].nunique()
+
+# Average revenue per order (net)
+# First aggregate revenue by order_id, then average
+order_rev = df.groupby('order_id')['revenue'].sum()
+avg_rev_per_order = order_rev.mean()
+
+# Build a concise health summary string
+answer = (
+    f""Net revenue: £{net_revenue:,.2f}; ""
+    f""Order lines: {total_rows}; ""
+    f""Distinct orders: {total_orders}; ""
+    f""Distinct customers: {total_customers}; ""
+    f""Avg revenue per order: £{avg_rev_per_order:,.2f}""
+)",,"{
+  ""cannot_answer"": false,
+  ""answer"": ""Bug: cancelled orders (order_id starting with 'C') are not excluded from the revenue calculations.""
+}",1591,1007,2.480074405670166,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q081,ambiguous,hard,abstain,CANNOT_ANSWER,How healthy is the business?,hallucinated,False,hallucinated_answer,
+code,False,"[['22423', 'REGENCY CAKESTAND 3 TIER', 153.0], ['22236', 'CAKE STAND 3 TIER MAGIC GARDEN', 114.75], ['21258', 'VICTORIAN SEWING BOX LARGE', 100.35], ['22988', 'SOLDIERS EGG CUP ', 90.0], ['22943', 'CH",False,"# Filter out cancelled orders (order_id that starts with 'C')
+valid_orders = df[~df['order_id'].astype(str).str.startswith('C')].copy()
+
+# Calculate revenue for each line
+valid_orders['revenue'] = valid_orders['qty'] * valid_orders['unit_price']
+
+# Aggregate total revenue per product (using both code and name for readability)
+product_perf = (
+    valid_orders
+    .groupby(['product_code', 'product_name'], as_index=False)['revenue']
+    .sum()
+)
+
+# Sort by revenue descending – highest‑revenue products are “doing well”
+product_perf = product_perf.sort_values('revenue', ascending=False)
+
+# Keep the top 10 products as a concise answer
+answer = product_perf.head(10).reset_index(drop=True)
+
+# If you prefer to see the full list, just remove the .head(10) line above.",,"```python
+# Filter out cancelled orders (order_id that starts with 'C')
+valid_orders = df[~df['order_id'].astype(str).str.startswith('C')].copy()
+
+# Calculate revenue for each line
+valid_orders['revenue'] = valid_orders['qty'] * valid_orders['unit_price']
+
+# Aggregate total revenue per product (using both code and name for readability)
+product_perf = (
+    valid_orders
+    .groupby(['product_code', 'product_name'], as_index=False)['revenue']
+    .sum()
+)
+
+# Sort by revenue descending – highest‑revenue products are “doing well”
+product_perf = product_perf.sort_values('revenue', ascending=False)
+
+# Keep the top 10 products as a concise answer
+answer = product_perf.head(10).reset_index(drop=True)
+
+# If you prefer to see the full list, just remove the .head(10) line above.
+```",650,395,1.2760770320892334,False,openai/gpt-oss-120b,gpt-oss-120b,2,Q083,ambiguous,hard,abstain,CANNOT_ANSWER,Which products are doing well?,hallucinated,False,hallucinated_answer,
+code,False,19,False,"# Calculate current stock level for product_code '20725'
+# Stock level is the net sum of quantities (positive for purchases, negative for returns/cancellations).
+
+stock_qty = df.loc[df['product_code'] == '20725', 'qty'].sum()
+
+# If there are no rows for this product, the sum will be 0, which is a valid stock level.
+answer = int(stock_qty) if pd.notnull(stock_qty) else ""CANNOT_ANSWER""",,"```python
+# Calculate current stock level for product_code '20725'
+# Stock level is the net sum of quantities (positive for purchases, negative for returns/cancellations).
+
+stock_qty = df.loc[df['product_code'] == '20725', 'qty'].sum()
+
+# If there are no rows for this product, the sum will be 0, which is a valid stock level.
+answer = int(stock_qty) if pd.notnull(stock_qty) else ""CANNOT_ANSWER""
+```",658,322,1.2616653442382812,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q071,unanswerable,hard,abstain,CANNOT_ANSWER,What is the current stock level of product_code '20725'?,hallucinated,False,hallucinated_answer,
+code,False,August,False,"# Calculate revenue for each line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Ensure order_datetime is a datetime dtype
+if not pd.api.types.is_datetime64_any_dtype(df['order_datetime']):
+    df['order_datetime'] = pd.to_datetime(df['order_datetime'])
+
+# Extract month name
+df['month'] = df['order_datetime'].dt.month_name()
+
+# Total revenue per month (net of returns/cancellations)
+monthly_rev = df.groupby('month', sort=False)['revenue'].sum()
+
+# Identify the month with the highest total revenue
+answer = monthly_rev.idxmax()",,"```python
+# Calculate revenue for each line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Ensure order_datetime is a datetime dtype
+if not pd.api.types.is_datetime64_any_dtype(df['order_datetime']):
+    df['order_datetime'] = pd.to_datetime(df['order_datetime'])
+
+# Extract month name
+df['month'] = df['order_datetime'].dt.month_name()
+
+# Total revenue per month (net of returns/cancellations)
+monthly_rev = df.groupby('month', sort=False)['revenue'].sum()
+
+# Identify the month with the highest total revenue
+answer = monthly_rev.idxmax()
+```",653,414,1.2941999435424805,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q076,ambiguous,hard,abstain,CANNOT_ANSWER,Which month was the best for the business?,hallucinated,False,hallucinated_answer,
+code,False,EIRE,False,"import pandas as pd
+import numpy as np
+
+# Compute revenue for each line
+df = df.copy()
+df[""revenue""] = df[""qty""] * df[""unit_price""]
+
+# Extract year-month period
+df[""order_month""] = pd.to_datetime(df[""order_datetime""]).dt.to_period(""M"")
+
+# Total revenue per country per month
+monthly_rev = (
+    df.groupby([""country"", ""order_month""], observed=True)[""revenue""]
+    .sum()
+    .reset_index()
+)
+
+# Pivot to have months as rows per country
+pivot = monthly_rev.pivot(index=""order_month"", columns=""country"", values=""revenue"").fillna(0)
+
+# Growth defined as change between the first and last month in the data set
+growth = pivot.iloc[-1] - pivot.iloc[0]
+
+# Country with the largest positive growth (if all non‑positive, still return the max)
+if not growth.empty:
+    answer = growth.idxmax()
+else:
+    answer = ""CANNOT_ANSWER""",,"```python
+import pandas as pd
+import numpy as np
+
+# Compute revenue for each line
+df = df.copy()
+df[""revenue""] = df[""qty""] * df[""unit_price""]
+
+# Extract year-month period
+df[""order_month""] = pd.to_datetime(df[""order_datetime""]).dt.to_period(""M"")
+
+# Total revenue per country per month
+monthly_rev = (
+    df.groupby([""country"", ""order_month""], observed=True)[""revenue""]
+    .sum()
+    .reset_index()
+)
+
+# Pivot to have months as rows per country
+pivot = monthly_rev.pivot(index=""order_month"", columns=""country"", values=""revenue"").fillna(0)
+
+# Growth defined as change between the first and last month in the data set
+growth = pivot.iloc[-1] - pivot.iloc[0]
+
+# Country with the largest positive growth (if all non‑positive, still return the max)
+if not growth.empty:
+    answer = growth.idxmax()
+else:
+    answer = ""CANNOT_ANSWER""
+```",651,417,1.6367084980010986,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q077,ambiguous,hard,abstain,CANNOT_ANSWER,Which country is growing the fastest?,hallucinated,False,hallucinated_answer,
+code,False,"[['22423', 'REGENCY CAKESTAND 3 TIER', 12, 153.0], ['22236', 'CAKE STAND 3 TIER MAGIC GARDEN', 9, 114.75], ['21258', 'VICTORIAN SEWING BOX LARGE', 9, 100.35], ['22988', 'SOLDIERS EGG CUP ', 72, 90.0],",False,"# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Aggregate by product (using both code and name to keep readability)
+product_perf = (
+    df
+    .groupby(['product_code', 'product_name'], as_index=False)
+    .agg(total_qty=('qty', 'sum'),
+         total_revenue=('revenue', 'sum'))
+)
+
+# Sort by total revenue descending – higher revenue generally indicates a product is “doing well”
+product_perf = product_perf.sort_values('total_revenue', ascending=False)
+
+# Optionally keep only the top N products (e.g., top 10)
+answer = product_perf.head(10).reset_index(drop=True)",,"```python
+# Compute revenue per line
+df['revenue'] = df['qty'] * df['unit_price']
+
+# Aggregate by product (using both code and name to keep readability)
+product_perf = (
+    df
+    .groupby(['product_code', 'product_name'], as_index=False)
+    .agg(total_qty=('qty', 'sum'),
+         total_revenue=('revenue', 'sum'))
+)
+
+# Sort by total revenue descending – higher revenue generally indicates a product is “doing well”
+product_perf = product_perf.sort_values('total_revenue', ascending=False)
+
+# Optionally keep only the top N products (e.g., top 10)
+answer = product_perf.head(10).reset_index(drop=True)
+```",650,367,1.2390477657318115,False,openai/gpt-oss-120b,gpt-oss-120b,3,Q083,ambiguous,hard,abstain,CANNOT_ANSWER,Which products are doing well?,hallucinated,False,hallucinated_answer,
